@@ -1,38 +1,40 @@
-## Introducción
+## Introduction
 
-Esta asignación utiliza datos de
-<a href="http://archive.ics.uci.edu/ml/"> UC Irvine Máquina
-Aprender </a> repositorio, un repositorio popular para aprendizaje automático
-conjuntos de datos. En particular, vamos a utilizar el "hogar individual
-el consumo de energía eléctrica del conjunto de datos ", que he puesto a disposición en
-el sitio web del curso:
-
-
-* <B> Conjunto de datos </ b>: <a </a> consumo de energía [20Mb]
-
-* <B> Descripción </ b>: Las mediciones de consumo de energía eléctrica en
-un hogar con una tasa de muestreo de un minuto durante un período de casi
-4 años. Los diferentes magnitudes eléctricas y algunos valores sub-medición
-están disponibles.
+This assignment uses data from
+the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine
+Learning Repository</a>, a popular repository for machine learning
+datasets. In particular, we will be using the "Individual household
+electric power consumption Data Set" which I have made available on
+the course web site:
 
 
-Se toman las siguientes descripciones de las 9 variables en el conjunto de datos
-de
-<a href="https://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption"> UCI
-sitio web </a>:
+* <b>Dataset</b>: <a href="https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip">Electric power consumption</a> [20Mb]
 
-<Ol>
-<Li> <b> Fecha </ b>: Fecha en formato dd / mm / aaaa </ li>
-<Li> <b> Tiempo </ b>: el tiempo en formato hh: mm: ss </ li>
-<Li> <b> Global_active_power </ b>: hogares poder global minutos promediada activa (en kilovatios) </ li>
-<Li> <b> Global_reactive_power </ b>: corriente doméstica mundial minutos promediada reactiva (en kilovatios) </ li>
-<Li> <b> Tensión </ b>: minutos promediada tensión (en voltios) </ li>
-<Li> <b> Global_intensity </ b>: hogar intensidad de corriente minuto promediada global (en amperios) </ li>
-<Li> <b> Sub_metering_1 </ b>: energía submedición No. 1 (en vatios-hora de energía activa). Corresponde a la cocina, que contiene principalmente un lavavajillas, horno y microondas (platos calientes no son eléctricos, pero alimentados gas). </ Li>
-<Li> <b> Sub_metering_2 </ b>: energía submedición Nº 2 (en vatios-hora de energía activa). Se corresponde con el cuarto de lavado, que contiene una lavadora, una secadora de pelo, una nevera y una luz. </ Li>
-<Li> <b> Sub_metering_3 </ b>: energía submedición No. 3 (en vatios-hora de energía activa). Corresponde a un calentador de agua eléctrico y un acondicionador de aire. </ Li>
-</ Ol>
+* <b>Description</b>: Measurements of electric power consumption in
+one household with a one-minute sampling rate over a period of almost
+4 years. Different electrical quantities and some sub-metering values
+are available.
 
-## Cargando los datos
+
+The following descriptions of the 9 variables in the dataset are taken
+from
+the <a href="https://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption">UCI
+web site</a>:
+
+<ol>
+<li><b>Date</b>: Date in format dd/mm/yyyy </li>
+<li><b>Time</b>: time in format hh:mm:ss </li>
+<li><b>Global_active_power</b>: household global minute-averaged active power (in kilowatt) </li>
+<li><b>Global_reactive_power</b>: household global minute-averaged reactive power (in kilowatt) </li>
+<li><b>Voltage</b>: minute-averaged voltage (in volt) </li>
+<li><b>Global_intensity</b>: household global minute-averaged current intensity (in ampere) </li>
+<li><b>Sub_metering_1</b>: energy sub-metering No. 1 (in watt-hour of active energy). It corresponds to the kitchen, containing mainly a dishwasher, an oven and a microwave (hot plates are not electric but gas powered). </li>
+<li><b>Sub_metering_2</b>: energy sub-metering No. 2 (in watt-hour of active energy). It corresponds to the laundry room, containing a washing-machine, a tumble-drier, a refrigerator and a light. </li>
+<li><b>Sub_metering_3</b>: energy sub-metering No. 3 (in watt-hour of active energy). It corresponds to an electric water-heater and an air-conditioner.</li>
+</ol>
+
+## Loading the data
+
+
 
 
